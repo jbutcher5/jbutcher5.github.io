@@ -15,7 +15,7 @@
 
 (defn write-pages [pages]
   (let [x (first pages) xs (rest pages)]
-    (with-open [wtr (writer (str "page/" (first x) ".html"))]
+    (with-open [wtr (writer (str (first x) ".html"))]
       (.write wtr (second x)))
     (when (> (count xs) 0) (write-pages xs))))
 
