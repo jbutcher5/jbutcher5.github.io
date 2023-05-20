@@ -7,7 +7,7 @@
   (html5
    [:head
     [:title "James' Portfolio"]
-    (include-css "styles.css")]
+    (include-css "output.css")]
    [:body
     [:h1 "Lorem Ipsum"]]))
 
