@@ -6,7 +6,7 @@
 (def index
   (html5
    [:head
-    [:title "James Portfolio"]
+    [:title "James' Portfolio"]
     (include-css "styles.css")]
    [:body
     [:h1 "Lorem Ipsum"]]))
