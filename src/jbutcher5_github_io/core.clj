@@ -9,8 +9,24 @@
     [:title "James' Portfolio"]
     (include-css "output.css")]
    [:body
-    [:h1 "Lorem Ipsum"]]))
-
+    [:p.text-white.text-4xl.p-4.font-bold.text-center "Hey, I'm James"]
+    [:p#text-block.py-4 "I enjoy programming and here are some of my interests:"
+     [:ul.list-disc.list-inside
+      (map
+       (fn [x] [:li#text-block x])
+       ["Compilers/Interpreters"
+        "Procedual Generation"
+        "Functional Programming"
+        "Low-level Programming"])]]
+    [:p#text-block.py-4 "Here are some of my favourite programming languages:"
+     [:ul.list-decimal.list-inside
+      (map
+       (fn [x] [:li#text-block x])
+       ["Scheme"
+        "C"
+        "Rust"
+        "Clojure"
+        "D"])]]]))
 (def pages [["index" index]])
 
 (defn write-pages [pages]
