@@ -9,7 +9,7 @@
     [:title "James' Portfolio"]
     (include-css "output.css")]
    [:body
-    [:p.text-white.text-4xl.p-4.font-bold.text-center.underline.decoration-wavy "Hi, I'm James"]
+    [:p.text-white.text-4xl.p-4.font-bold.flex.justify-center.underline.decoration-wavy "Hi, I'm James"]
     [:p#text-block.py-4 "I enjoy programming and here are some of my interests:"
      [:ul.list-disc.list-inside
       (map
