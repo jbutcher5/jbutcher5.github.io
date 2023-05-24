@@ -9,7 +9,9 @@
     [:title "James' Portfolio"]
     (include-css "output.css")]
    [:body
-    [:p.text-white.text-4xl.p-4.font-bold.flex.justify-center.underline.decoration-wavy "Hi, I'm James"]
+    [:div.flex.justify-center
+     [:img {:class "rounded-full p-3" :src "res/profile.png" :width "100" :height "100"}]
+     [:p.text-white.text-4xl.p-4.mt-1.font-bold.underline.decoration-wavy "Hi, I'm James"]]
     [:p#text-block.py-4 "I enjoy programming and here are some of my interests:"
      [:ul.list-disc.list-inside
       (map
